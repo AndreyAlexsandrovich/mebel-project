@@ -17,16 +17,28 @@
       </div>
       <nav class="header__menu menu">
         <ul class="menu__items">
-            <li class="menu__items-item">
-                <a href="" class="menu__item-link">О нас</a>
-                <a href="" class="menu__item-link">Проекты</a>
-                <a href="" class="menu__item-link">Материалы</a>
-                <a href="" class="menu__item-link">Отзывы</a>
-            </li>
-        </ul>
-      </nav>
-      <div class="header__address">
+          <li class="menu__items-item">
+            <a href="" class="menu__item-link">О нас</a>
+          </li>
+          <li class="menu__items-item">
+              <a href="" class="menu__item-link">Проекты</a>
+          </li>
+          <li class="menu__items-item">
+            <a href="" class="menu__item-link">Материалы</a>
+          </li>
+        <li class="menu__items-item">
+          <a href="" class="menu__item-link">Отзывы</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__address">
         <a href="tel:79999999999" class="header__telephone">+7 999 999 99 99</a>
+    </div>
+      <div tabindex="1" class="hamburger-menu">
+        <div class="hamburger">
+          <p class="visually-hidden">Кнопка открытия меню</p>
+          <span class="line"></span>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -39,4 +51,9 @@
     </main>
     <footer class="footer"></footer>
   </body>
+  <script>
+    document.querySelector(".hamburger-menu").addEventListener("click", () => { 
+      document.querySelector(".menu__items").classList.toggle("show-menu");
+    })
+  </script>
 </html>

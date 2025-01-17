@@ -1,4 +1,7 @@
 :root { 
+    /* fonts */
+    --system-fonts-main: 'Roboto', sans-serif;
+    --component-fonts-main: 'Helvetica', fantasy;
     /* sizes */
     --component-size-title: clamp(2rem, 1.2857rem + 3.5714vw, 4.5rem);
     --component-size-section: clamp(1.75rem, 1.3929rem + 1.7857vw, 3rem);
