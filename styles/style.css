@@ -1,0 +1,8 @@
+@import "components/header.css";
+
+.page { 
+    min-inline-size: 320px;
+    max-inline-size: 1355px;
+    min-block-size: 100dvb;
+    margin: 0 auto;
+}

@@ -1,0 +1,13 @@
+:root { 
+    /* sizes */
+    --component-size-title: clamp(2rem, 1.2857rem + 3.5714vw, 4.5rem);
+    --component-size-section: clamp(1.75rem, 1.3929rem + 1.7857vw, 3rem);
+    --system-size-text: clamp(1.5rem, 1.2857rem + 1.0714vw, 2.25rem);
+    /* colours */
+    --system-main: #212529;
+    --system-bacground: #fff;
+    /* ---------------------- */
+    --component-accent: #DDD7C0;
+    --component-form-color: #E13A3A;
+    --component-form: #F9C67B;
+}
