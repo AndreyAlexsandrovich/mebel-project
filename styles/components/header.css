@@ -150,6 +150,10 @@
         align-items: start;
     }
 
+    .header__telephone { 
+        font-size: 18px;
+    }
+
     .header__address {
         height: 100%;
     }
