@@ -13,7 +13,7 @@
     width: 26px;
     height: 28px;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header> :nth-child(n + 4) {
@@ -66,10 +66,11 @@
 
 .menu__items.show-menu {
     display: flex;
-    position: absolute;
+    position: relative;
     animation: slideInLeft 1s linear;
     top: 50%;
     right: 0;
+    z-index: 2;
     transform: translateY(-50%);
     background-color: var(--component-accent);
     gap: 50px;
