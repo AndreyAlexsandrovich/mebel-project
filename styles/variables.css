@@ -5,6 +5,7 @@
     /* sizes */
     --component-size-title: clamp(2rem, 1.2857rem + 3.5714vw, 4.5rem);
     --component-size-section: clamp(1.75rem, 1.3929rem + 1.7857vw, 3rem);
+    --component-size-subtitle: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
     --system-size-text: clamp(1.5rem, 1.2857rem + 1.0714vw, 2.25rem);
     /* colours */
     --system-main: #212529;

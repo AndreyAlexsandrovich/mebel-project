@@ -1,14 +1,12 @@
 .header {
-    padding-block-start: 15px;
     display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    padding-block-start: 15px;
     column-gap: 20px;
-}
-
-.header> :nth-child(n + 3) {
-    justify-self: end;
     align-items: center;
+    justify-items: center;
+
 }
 
 .header__logo img {
@@ -18,18 +16,18 @@
     z-index: 2;
 }
 
-.header__menu {
-    display: grid;
+.header> :nth-child(n + 4) {
+    justify-items: end;
 }
 
 .hamburger-menu {
-    grid-column: 4;
     display: inline;
     position: relative;
     width: 24px;
     height: 12px;
     z-index: 10;
     cursor: pointer;
+    grid-column: 4 / span 1;
 }
 
 .hamburger::after,
@@ -48,13 +46,18 @@
 
 .hamburger::before {
     top: 0;
-    left: 0;
+    left: 100%;
 }
 
 .hamburger::after {
     bottom: 0;
-    right: 0;
+    right: -100%;
     width: 58%;
+}
+
+.header__menu {
+    position: absolute;
+    inset: 0;
 }
 
 .menu__items {
@@ -106,6 +109,12 @@
     font-family: var(--system-fonts-main);
     font-weight: 400;
     font-size: 14px;
+    position: relative;
+    z-index: 3;
+}
+
+.header__address {
+    grid-column: 2 / span 2;
 }
 
 @keyframes slideInLeft {
@@ -123,6 +132,11 @@
         display: none;
     }
 
+    .header__menu {
+        position: relative;
+        grid-column: 9 / span 1;
+    }
+
     .menu__items {
         display: flex;
         flex-direction: column;
@@ -131,13 +145,14 @@
 
     .header {
         display: grid;
-        grid-template-columns: 2fr 7fr 3fr;
+        grid-template-columns: repeat(12, 1fr);
         justify-content: start;
     }
 
     .header__logo {
         height: 100%;
         margin-block-start: 15px;
+        grid-column: span 1;
     }
 
     .header__logo img {
@@ -145,17 +160,13 @@
         height: 51px;
     }
 
-    .header> :nth-child(n + 2) {
-        justify-self: end;
-        align-items: start;
-    }
-
-    .header__telephone { 
+    .header__telephone {
         font-size: 18px;
     }
 
     .header__address {
         height: 100%;
+        grid-column: 11 / span 2;
     }
 
 }
