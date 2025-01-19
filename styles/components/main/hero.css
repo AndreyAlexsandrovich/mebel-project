@@ -49,6 +49,14 @@
     background-color: var(--system-main);
 }
 
+.hero__order-project:focus { 
+    outline: none;
+}
+
+.hero__order-project:focus-visible { 
+    text-shadow: 2px 2px 3px #00000077;
+}
+
 .hero__image-information { 
     grid-row: 4;
     grid-column: 1 / span 4;

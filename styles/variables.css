@@ -13,5 +13,6 @@
     /* ---------------------- */
     --component-accent: #DDD7C0;
     --component-form-color: #E13A3A;
+    --component-focus: #000000;
     --component-form: #F9C67B;
 }

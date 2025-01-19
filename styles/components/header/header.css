@@ -95,14 +95,9 @@
     outline: none;
 }
 
-.hamburger-menu, .header__telephone, .menu__item-link {
-    border-color: var(--component-form-color);
-}
 
 .header__telephone:focus-visible, .menu__item-link:focus-visible {
-    border: 2px dashed transparent;
-    padding: 10px;
-    transition: border-color 0.5s ease-in-out 1s;
+    text-shadow: 2px 2px 3px #00000077;
 }
 
 .header__telephone {
