@@ -1,6 +1,6 @@
 @import "components/header/header.css";
 @import "components/main/hero.css";
-
+@import "components/main/about.css";
 .page { 
     min-inline-size: 320px;
     max-inline-size: 1419px;
