@@ -1,0 +1,13 @@
+.projects {
+    padding-block-start: 120px;
+}
+
+.projects__container { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(252px, 435px));
+    grid-gap: 20px;
+}
+
+.projects__container-project img {
+    display: block;
+}

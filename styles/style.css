@@ -2,7 +2,7 @@
 @import "components/main/hero.css";
 @import "components/main/about.css";
 @import "components/main/how.css";
-
+@import "components/main/projects.css";
 .page { 
     min-inline-size: 320px;
     max-inline-size: 1419px;
