@@ -52,10 +52,28 @@
           производственное решение любой задумки.
         </p>
         <picture class="hero__image-information">
-          <img src="images/image-information.png" alt="Наш проект в сделанный в светлых тонах" />
+          <source srcset="./images/formats/image-information.webp" type="image/webp">
+          <img
+            src="images/image-information.png"
+            srcset="
+              ./images/pixel-density/image-information-x1.png 1x,
+              ./images/pixel-density/image-information-x2.png 2x,
+              ./images/pixel-density/image-information-x3.png 3x
+            "
+            alt="Наш проект в сделанный в светлых тонах"
+          />
         </picture>
         <picture class="hero__image-decorative">
-          <img src="images/image-decorative.png" alt="Еще один проект сделанный в светлых тонах" />
+          <source srcset="./images/formats/image-decorative.webp" type="image/webp">
+          <img
+            src="images/image-decorative.png"
+            srcset="
+              ./images/pixel-density/image-decorative-x1.png 1x,
+              ./images/pixel-density/image-decorative-x2.png 2x,
+              ./images/pixel-density/image-decorative-x3.png 3x
+            "
+            alt="Еще один проект сделанный в светлых тонах"
+          />
         </picture>
       </section>
       <section class="about">
@@ -139,23 +157,77 @@
       <section class="projects">
         <h4 class="projects__title section-title">Проекты</h4>
         <div class="projects__container">
-          <picture class="projects__container-project project-1">
-            <img src="images/project-1.png" alt="Тумба под телевизор">
+          <picture class="projects__container-project project-1" data-content="Тумба под телевизор">
+            <source srcset="./images/formats/project-1.webp" type="image/webp">
+            <img
+              src="images/project-1.png"
+              alt="Тумба под телевизор"
+              srcset="
+                ./images/pixel-density/project-1-x1.png 1x,
+                ./images/pixel-density/project-1-x2.png 2x,
+                ./images/pixel-density/project-1-x3.png 3x
+              "
+            />
           </picture>
-          <picture class="projects__container-project project-2">
-            <img src="images/project-2.png" alt="Кухня с сочетанием светлых цветов">
+          <picture class="projects__container-project project-2"  data-content="Кухня со шкафом">
+            <source srcset="./images/formats/project-2.webp" type="image/webp">
+            <img
+              src="images/project-2.png"
+              alt="Кухня с сочетанием светлых цветов"
+              srcset="
+                ./images/pixel-density/project-2-x1.png 1x,
+                ./images/pixel-density/project-2-x2.png 2x,
+                ./images/pixel-density/project-2-x3.png 3x
+              "
+            />
           </picture>
-          <picture class="projects__container-project project-3">
-            <img src="images/project-3.png" alt="Панорама окон на улицу">
+          <picture class="projects__container-project project-3"  data-content="Гостиная">
+            <source srcset="./images/formats/project-3.webp" type="image/webp">
+            <img
+              src="images/project-3.png"
+              alt="Панорама окон на улицу"
+              srcset="
+                ./images/pixel-density/project-3-x1.png 1x,
+                ./images/pixel-density/project-3-x2.png 2x,
+                ./images/pixel-density/project-3-x3.png 3x
+              "
+            />
           </picture>
-          <picture class="projects__container-project project-4">
-            <img src="images/project-4.png" alt="Красивое распложение мебели. Справа шкаф, слева небольшой стол, а над ним две тумбочки темных цветов и белая доска для написания">
+          <picture class="projects__container-project project-4"  data-content="Мебель">
+            <source srcset="./images/formats/project-4.webp" type="image/webp">
+            <img
+              src="images/project-4.png"
+              srcset="
+                ./images/pixel-density/project-4-x1.png 1x,
+                ./images/pixel-density/project-4-x2.png 2x,
+                ./images/pixel-density/project-4-x3.png 3x
+              "
+              alt="Красивое распложение мебели. Справа шкаф, слева небольшой стол, а над ним две тумбочки темных цветов и белая доска для написания"
+            />
           </picture>
-          <picture class="projects__container-project project-5">
-            <img src="images/project-5.png" alt="Спальня">
+          <picture class="projects__container-project project-5"  data-content="Спальня">
+            <source srcset="./images/formats/project-5.webp" type="image/webp">
+            <img
+              src="images/project-5.png"
+              srcset="
+                ./images/pixel-density/project-5-x1.png 1x,
+                ./images/pixel-density/project-5-x2.png 2x,
+                ./images/pixel-density/project-5-x3.png 3x
+              "
+              alt="Спальня"
+            />
           </picture>
-          <picture class="projects__container-project project-6">
-            <img src="images/project-6.png" alt="Тумбочка с растениями">
+          <picture class="projects__container-project project-6"  data-content="Тумба под растения">
+            <source srcset="./images/formats/project-6.webp" type="image/webp">
+            <img
+              src="images/project-6.png"
+              srcset="
+                ./images/pixel-density/project-6-x1.png 1x,
+                ./images/pixel-density/project-6-x2.png 2x,
+                ./images/pixel-density/project-6-x3.png 3x
+              "
+              alt="Тумбочка с растениями"
+            />
           </picture>
         </div>
       </section>

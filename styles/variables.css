@@ -10,6 +10,8 @@
     /* colours */
     --system-main: #212529;
     --system-bacground: #fff;
+    --component-card-text: #fff;
+    --component-background-card: rgba(33, 37, 41, 0.5);
     /* ---------------------- */
     --component-accent: #DDD7C0;
     --component-form-color: #E13A3A;

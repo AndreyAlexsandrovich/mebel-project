@@ -10,4 +10,32 @@
 
 .projects__container-project img {
     display: block;
+    max-width: 100%;
+}
+
+.projects__container-project { 
+    position: relative;
+    overflow: hidden;
+}
+
+.projects__container-project::before { 
+  content: attr(data-content);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 22px 0 22px 20px;
+  color: var(--component-card-text);
+  font-weight: 400;
+  font-family: var(--system-fonts-main);
+  font-size: 16px;
+  bottom: -100%;
+  width: 100%;
+  background-color: var(--component-background-card);
+  transition: bottom 0.3s ease 0.05s;
+}
+
+
+
+.projects__container-project:hover::before { 
+    bottom: 0;
 }
